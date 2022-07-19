@@ -4,8 +4,10 @@ with open('merge1.csv','r') as f:
     read=csv.reader(f)
     for i in read:
         data.append(i)
-
+nan = f
+f= f.dropna()
 f=f[f['column_name'].notna()]
+
 
 del f["Luminiosity"]
 
