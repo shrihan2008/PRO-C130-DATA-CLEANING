@@ -1,6 +1,6 @@
 import csv,pandas as pd
 data=[]
-f=pd.read_csv("dwarf_stars.csv")
+f=pd.read_csv("total_stars.csv")
 
 star_data=data[1:]
 star_data.sort(key=lambda star_data:star_data[2])
